@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(helmet());
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(morgan("dev"));
 app.use("/api", router);
 app.get("/", (request, response) => {
