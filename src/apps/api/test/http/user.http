@@ -1,0 +1,4 @@
+GET  http://localhost:3333/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUxYWQ1NzczLTZlZjEtNDAxZC04MGFkLTAxY2UyZjEyMTdmNCIsImlhdCI6MTc0ODUyMTg2NX0.Gh-LSCee6GoLnI1SQk8IjE5pOS3W-3llBIqxIQ2S6no
+
