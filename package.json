@@ -1,0 +1,42 @@
+{
+  "name": "teste-pratico-consumo-de-api-para-lista-de-usuarios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"yarn dev:api\" \"yarn dev:web\" \"yarn dev:mobile\"",
+    "dev:api": "cd src/apps/api && yarn dev",
+    "dev:web": "cd src/apps/web && yarn dev",
+    "dev:mobile": "cd src/apps/mobile && yarn start",
+    "build": "concurrently \"yarn build:api\" \"yarn build:web\"",
+    "build:api": "cd src/apps/api && yarn build",
+    "build:web": "cd src/apps/web && yarn build",
+    "test": "concurrently \"yarn test:api\" \"yarn test:web\"",
+    "test:api": "cd src/apps/api && yarn test",
+    "test:web": "cd src/apps/web && yarn test",
+    "lint": "concurrently \"yarn lint:api\" \"yarn lint:web\"",
+    "lint:api": "cd src/apps/api && yarn lint",
+    "lint:web": "cd src/apps/web && yarn lint",
+    "format": "concurrently \"yarn format:api\" \"yarn format:web\"",
+    "format:api": "cd src/apps/api && yarn format",
+    "format:web": "cd src/apps/web && yarn format",
+    "prisma:generate": "cd src/apps/api && yarn prisma generate",
+    "prisma:migrate": "cd src/apps/api && yarn prisma migrate dev",
+    "prisma:studio": "cd src/apps/api && yarn prisma studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teigorme/teste-pratico-consumo-de-api-para-lista-de-usuarios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teigorme/teste-pratico-consumo-de-api-para-lista-de-usuarios/issues"
+  },
+  "homepage": "https://github.com/teigorme/teste-pratico-consumo-de-api-para-lista-de-usuarios#readme",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
